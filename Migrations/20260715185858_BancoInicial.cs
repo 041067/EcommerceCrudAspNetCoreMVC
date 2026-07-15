@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Esse_deu_certo_MVC_Exemplo.Migrations
 {
     /// <inheritdoc />
-    public partial class CriandoTabelas : Migration
+    public partial class BancoInicial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

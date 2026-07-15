@@ -1,25 +1,33 @@
 ﻿@model IEnumerable<Esse_deu_certo_MVC_Exemplo.Models.Usuario>
 
-<h2>Usuários Cadastrados</h2>
+<div class="admin-wrapper">
+    <h2>👨‍💼 Usuários Cadastrados</h2>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Nome</th>
-            <th>Email</th>
-            <th>Tipo</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var u in Model)
-        {
-            <tr>
-                <td>@u.Nome</td>
-                <td>@u.Email</td>
-                <td>@u.Tipo</td>
-            </tr>
-        }
-    </tbody>
-</table>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Tipo</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var u in Model)
+                {
+                    <tr>
+                        <td>@u.Nome</td>
+                        <td>@u.Email</td>
+                        <td>
+                            <span class="badge" style="background: @(u.Tipo == "Admin" ? "linear-gradient(135deg, #ffc107, #ff9800); color: #1a1a2e;" : "linear-gradient(135deg, #00f7ff, #0077b6);"); padding: 5px 12px; border-radius: 6px;">
+                                @u.Tipo
+                            </span>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 
-<a href="/Admin/Dashboard" class="btn btn-primary">Voltar</a>
+    <a href="/Admin/Dashboard" class="btn btn-secondary">← Voltar ao Dashboard</a>
+</div>

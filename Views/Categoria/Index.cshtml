@@ -1,28 +1,33 @@
 ﻿@model IEnumerable<Esse_deu_certo_MVC_Exemplo.Models.Categoria>
 
-<h2>Categorias</h2>
+<div class="admin-wrapper">
+    <div class="categoria-header">
+        <h2>📁 Categorias</h2>
+        <a href="/Categoria/Cadastrar" class="btn btn-primary">+ Nova Categoria</a>
+    </div>
 
-<a href="/Categoria/Cadastrar" class="btn btn-primary mb-3">+ Nova Categoria</a>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var c in Model)
+                {
+                    <tr>
+                        <td>@c.Nome</td>
+                        <td>
+                            <a href="/Categoria/Editar/@c.Id" class="btn btn-primary btn-sm">Editar</a>
+                            <a href="/Categoria/Excluir/@c.Id" onclick="return confirm('Excluir esta categoria?')" class="btn btn-danger btn-sm">Excluir</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Nome</th>
-            <th>Ações</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var c in Model)
-        {
-            <tr>
-                <td>@c.Nome</td>
-                <td>
-                    <a href="/Categoria/Editar/@c.Id" class="btn btn-primary">Editar</a> |
-                    <a href="/Categoria/Excluir/@c.Id" onclick="return confirm('Excluir esta categoria?')" class="btn btn-danger">Excluir</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
-
-<a href="/Admin/Dashboard" class="btn btn-secondary">Voltar</a>
+    <a href="/Admin/Dashboard" class="btn btn-secondary">← Voltar ao Dashboard</a>
+</div>

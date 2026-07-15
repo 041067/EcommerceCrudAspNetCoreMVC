@@ -12,15 +12,15 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Esse_deu_certo_MVC_Exemplo.Migrations
 {
     [DbContext(typeof(LojaContext))]
-    [Migration("20251024131951_CriandoTabelas")]
-    partial class CriandoTabelas
+    [Migration("20260715185858_BancoInicial")]
+    partial class BancoInicial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "9.0.9")
+                .HasAnnotation("ProductVersion", "9.0.10")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);

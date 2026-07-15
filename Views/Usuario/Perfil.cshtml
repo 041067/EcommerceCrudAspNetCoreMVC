@@ -1,16 +1,16 @@
 ﻿@model Esse_deu_certo_MVC_Exemplo.Models.Usuario
 
 <div class="container mt-5">
-    <div class="card shadow p-4">
-        <h2 class="mb-4">👤 Meu Perfil</h2>
+    <div class="card profile-card">
+        <h2>👤 Meu Perfil</h2>
 
-        <p><strong>Nome:</strong> @Model.Nome</p>
-        <p><strong>Email:</strong> @Model.Email</p>
+        <p><strong>Nome:</strong> <span style="color: #e0e0e0;">@Model.Nome</span></p>
+        <p><strong>Email:</strong> <span style="color: #e0e0e0;">@Model.Email</span></p>
 
-        <div class="mt-4">
+        <div class="profile-actions">
             <a href="/Carrinho/Index" class="btn btn-primary">🛒 Ver Carrinho</a>
             <a href="/Produto/Index" class="btn btn-success">🛍️ Continuar Comprando</a>
-            <a href="/Usuario/Logout" class="btn btn-danger float-end">🚪 Sair</a>
+            <a href="/Usuario/Logout" class="btn btn-danger" style="margin-left: auto;">🚪 Sair</a>
         </div>
     </div>
 </div>
