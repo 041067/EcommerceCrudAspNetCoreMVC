@@ -4,18 +4,18 @@
 
 <section class="hero">
 
-    <video autoplay muted loop class="hero-video">
-        <source src="/videos/robot-battle.mp4" type="video/mp4">
-    </video>
+    <img src="/images/banner_mercado_livre.jpg"
+         alt="Banner Mercado Livre"
+         class="hero-image">
 
     <div class="hero-content">
 
         <h1 class="hero-title">
-            Bem-vindo à <span class="brand">RoboForge</span>
+            Bem-vindo ao Mercado Livre
         </h1>
 
         <p class="hero-subtitle">
-            O futuro da robótica começa aqui
+            Sua próxima compra a um clique
         </p>
 
         <p class="hero-ai-text">
@@ -35,33 +35,33 @@
 
 <script>
 
-    const xArray = ["Itália", "França", "Espanha", "EUA", "Argentina"];
-    const yArray = [55, 49, 44, 24, 15];
+    const xArray = ["Sudeste", "Centro-Oeste", "Norte", "Sul", "Nordeste"];
+    const yArray = [57, 10, 9, 17, 7];
 
     const data = [{
         labels: xArray,
         values: yArray,
         type: "pie",
-        hole: .35,
+        hole: .30,
         textinfo: "label+percent",
         hoverinfo: "label+percent+value",
         marker: {
             colors: [
-                "#00f7ff",
-                "#007bff",
-                "#00ff9c",
-                "#ff3b3b",
-                "#b86bff"
+                "#80CBC4", // Verde-água pastel
+"#90CAF9", // Azul pastel
+"#A5D6A7", // Verde pastel
+"#EF9A9A", // Vermelho pastel
+"#CE93D8"  // Roxo pastel
             ]
         }
     }];
 
     const layout = {
         title: {
-            text: "Vendas globais de robôs RoboForge",
+            text: "Regiões que mais compram",
             font: {
-                size: 24,
-                color: "#ffffff"
+                size: 30,
+                color: "#333333"
             }
         },
 
@@ -69,7 +69,7 @@
         plot_bgcolor: "rgba(0,0,0,0)",
 
         font: {
-            color: "#ffffff"
+            color: "#333333"
         },
 
         showlegend: true
@@ -89,29 +89,29 @@
     <div class="carousel-inner">
 
         <div class="carousel-item active">
-            <img src="https://forbes.com.br/wp-content/uploads/2021/09/ForbesTech_robo-humanoide_Andriy-Onufriyenko_Getty-Images-900x600.png" class="d-block w-100">
+            <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" class="d-block w-100">
 
             <div class="carousel-caption">
-                <h2>Robôs Inteligentes</h2>
-                <p>Tecnologia que transforma o futuro</p>
+                <h2>Tudo o que você procura, em um só lugar!</h2>
+                <p>Encontre seus produtos favoritos com praticidade, variedade e poucos cliques.</p>
             </div>
         </div>
 
         <div class="carousel-item">
-            <img src="https://www.correiobraziliense.com.br/cbradar/wp-content/uploads/2025/03/robos_1742321492248-1140x570.jpg" class="d-block w-100">
+            <img src="https://images.unsplash.com/photo-1713947506242-8fcae733d158?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" class="d-block w-100">
 
             <div class="carousel-caption">
-                <h2>Automação Avançada</h2>
-                <p>Soluções robóticas para o mundo moderno</p>
+                <h2>Grandes oportunidades esperam por você!</h2>
+                <p>Explore ofertas e descubra produtos que combinam com seu estilo e suas necessidades. </p>
             </div>
         </div>
 
         <div class="carousel-item">
-            <img src="https://diariodocomercio.com.br/mix/wp-content/uploads/2025/11/image-99-1140x570.png" class="d-block w-100">
+            <img src="https://plus.unsplash.com/premium_photo-1681488262364-8aeb1b6aac56?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" class="d-block w-100">
 
             <div class="carousel-caption">
-                <h2>RoboForge</h2>
-                <p>Construindo o futuro da robótica</p>
+                <h2> Comprar online nunca foi tão fácil! </h2>
+                <p> Navegue por diversas categorias e encontre o que precisa sem sair de casa.</p>
             </div>
         </div>
 
